@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/imgSanPhamGioHang"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/cell_phone_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTenSanPhamGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tên"
+                android:textColor="#067bba"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtGiaSanPhamGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Giá"
+                android:textColor="#7c01f7"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtSoLuongMua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số lượng mua:"
+                android:textSize="20sp"
+                android:textColor="#f20"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
